@@ -5,6 +5,7 @@ body{
     
     margin: 0px;
     padding: 0px;
+    background-color: #F5F5F5;
 }
 header {
     display: flex;
@@ -34,7 +35,7 @@ nav ul a{
     background-size: cover;
     width: 100%;
     height: 400px;
-    display: block;
+    display: flex   ;
     justify-content: center;
     align-items: center;
 }
@@ -51,12 +52,13 @@ nav ul a{
 }
 .content p{
     color: white;
+    text-align: center;
     font-size: 20px;
-    width: 90%;
+    /* width: 95%; */
     margin: auto;
 }
 button{
-    background-color: #1D729C;
+    background-color:   #d9dfe3;
     display: inline;
     color: white;
     border: none;
@@ -64,26 +66,123 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
+.bouttons{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.titre h1{
+    align-items: center;
+    text-align: center ;
+
+}
+.first-partie{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center ;
+    gap: 30px;
+    margin: 10px  10px ;
+}
+.partie{
+    border: 1px rgba(0, 0, 0, 0.045) solid;
+    background-color: white;
+    width: 80%;
+    height: max-content;
+}
+.partie h2{
+    font-size: 25px;
+}
+.partie p{
+    font-size: 20px;
+}
+.partie i{
+    font-size: 50px;
+}
+.icon{
+    margin-top: 15px;
+}
+.second{
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+}
+.second h1{
+    align-items: center;
+    text-align: center ;
+    padding-top: 80px;
+    font-weight:bolder;
+    font-size: 50px;
+}
+.second h2{
+    align-items: center;
+    text-align: center ;
+    font-size: 20px;
+}
+.three-partie{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    text-align: center;
+    margin: 50px;
+}
+.three h1{
+    font-size: 50px;
+}
+.three h2{
+    font-size: 30px;
+}
+.three h1 #bleu{
+    color:rgb(28, 118, 160);
+}
+#vert{
+    color: rgb(33, 166, 33);
+}
+#violet{
+    color: rgb(116, 21, 167);
+}
+#orange{
+    color: rgb(191, 130, 15);
+}
 
 @media (max-width: 768px) {
     header{
         padding: 0px;
         margin: 0px;
-        flex-direction: column;
     }
     nav ul a{
-        font-size: 10px;
-        
+        font-size: 10px; 
     }
     nav ul{
         gap: 10px;
         margin-right: 10px;
     }
     #logo img{
-        height:100px;
-        width: 112px;
+        height:50px;
+        width: 100px;
     }
+    .content h1{
+        font-size: 25px;
+    }
+    .content p{
+        font-size: 20px;
+    }
+    .cover{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .first-partie{
+        flex-direction: column;
+    }
+    .second h1{
+        font-size: 30px;
+    }
+    .three-partie{
+        flex-direction: column;
+    }
+
 }
 @media (max-width: 540px) {
-
+    
 }
