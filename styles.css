@@ -35,7 +35,7 @@ nav ul a{
     background-size: cover;
     width: 100%;
     height: 400px;
-    display: flex   ;
+    display: inline-block   ;
     justify-content: center;
     align-items: center;
 }
@@ -67,7 +67,7 @@ button{
     cursor: pointer;
 }
 .bouttons{
-    display: flex;
+    display: inline;
     align-items: center;
     text-align: center;
 }
@@ -87,7 +87,7 @@ button{
 .partie{
     border: 1px rgba(0, 0, 0, 0.045) solid;
     background-color: white;
-    width: 80%;
+    width: 100%;
     height: max-content;
 }
 .partie h2{
@@ -106,7 +106,8 @@ button{
     background-color: white;
     margin: 0 auto;
     width: 100%;
-    height: 250px;
+    height: max-content;
+    padding-bottom: 10px;
 }
 .second h1{
     align-items: center;
@@ -180,6 +181,13 @@ footer{
     text-decoration: none;
     color: white;
 }
+.copy{
+    display: block;
+}
+
+/* Parge de centre medicaux */
+
+
 
 @media (max-width: 768px) {
     header{
@@ -227,5 +235,8 @@ footer{
     }
 }
 @media (max-width: 540px) {
-    
+    header{
+        flex-direction: column;
+    }
+   
 }
