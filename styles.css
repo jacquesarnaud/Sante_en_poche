@@ -145,7 +145,41 @@ button{
 #orange{
     color: rgb(191, 130, 15);
 }
-
+footer{
+    background-color: #0a1a22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+}
+.footer-section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: max-content;
+}
+.footer-section p{
+    font-size: 15px;
+}
+.footer-section ul{
+    list-style-type: none;
+    padding: 0px;
+    
+}
+.footer-section ul li{
+    margin: 10px 0px;
+}
+.footer-section ul li a{
+    text-decoration: none;
+    color: white;
+}
 
 @media (max-width: 768px) {
     header{
@@ -182,7 +216,15 @@ button{
     .three-partie{
         flex-direction: column;
     }
-
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-section{
+        width: 100%;
+    }
+    .footer-section h1{
+        font-size: 20px;
+    }
 }
 @media (max-width: 540px) {
     
