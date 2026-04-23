@@ -195,7 +195,7 @@ footer{
         margin: 0px;
     }
     nav ul a{
-        font-size: 10px; 
+        font-size: 14px; 
     }
     nav ul{
         gap: 10px;
@@ -206,10 +206,10 @@ footer{
         width: 100px;
     }
     .content h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     .content p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .cover{
         flex-direction: column;
