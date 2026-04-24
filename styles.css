@@ -1,242 +1,300 @@
-*{
-   font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    
-    margin: 0px;
-    padding: 0px;
-    background-color: #F5F5F5;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f5f5f5;
 }
 header {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
-#logo img{
-    width: 210px;
-    height: 120px;
+#logo img {
+  width: 210px;
+  height: 120px;
 }
 
-nav ul{
+.menu-liste {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  list-style-type: none;
+  margin-right: 40px;
+}
+ .burger-checkbox {
+  display: none;
+}
+.burger-icon{
+    display: none;
+   }
+ /* .burger-icon {
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    list-style-type: none;
-    margin-right: 40px;
-    
-}
-nav ul a{
-    text-decoration: none;
-    color: black;
-}
-.cover{
-    background-color: #1D729C;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    display: inline-block   ;
-    justify-content: center;
-    align-items: center;
-}
-.content{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #1D729C;
-}
-.content h1{
-    color: white;
-    font-size: 30px;
-}
-.content p{
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    /* width: 95%; */
-    margin: auto;
-}
-button{
-    background-color:   #d9dfe3;
-    display: inline;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.bouttons{
-    display: inline;
-    align-items: center;
-    text-align: center;
-}
-.titre h1{
-    align-items: center;
-    text-align: center ;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer; 
 
+  }*/
+  /* .burger-icon span {
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.3s;
+  } */
+ 
+  /* .menu-liste {
+    display: none;
+  } */
+nav ul a {
+  text-decoration: none;
+  color: black;
 }
-.first-partie{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: center ;
-    gap: 30px;
-    margin: 10px  10px ;
+.cover {
+  background-color: #1d729c;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
-.partie{
-    border: 1px rgba(0, 0, 0, 0.045) solid;
-    background-color: white;
-    width: 100%;
-    height: max-content;
+.content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1d729c;
 }
-.partie h2{
-    font-size: 25px;
+.content h1 {
+  color: white;
+  font-size: 30px;
 }
-.partie p{
-    font-size: 20px;
+.content p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  /* width: 95%; */
+  margin: auto;
 }
-.partie i{
-    font-size: 50px;
+button {
+  background-color: #d9dfe3;
+  display: inline;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
-.icon{
-    margin-top: 15px;
+.bouttons {
+  display: inline;
+  align-items: center;
+  text-align: center;
 }
-.second{
-    background-color: white;
-    margin: 0 auto;
-    width: 100%;
-    height: max-content;
-    padding-bottom: 10px;
+.titre h1 {
+  align-items: center;
+  text-align: center;
 }
-.second h1{
-    align-items: center;
-    text-align: center ;
-    padding-top: 80px;
-    font-weight:bolder;
-    font-size: 50px;
+.first-partie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin: 10px 10px;
 }
-.second h2{
-    align-items: center;
-    text-align: center ;
-    font-size: 20px;
+.partie {
+  border: 1px rgba(0, 0, 0, 0.045) solid;
+  background-color: white;
+  width: 100%;
+  height: max-content;
 }
-.three-partie{
-    display: flex;
-    justify-content: space-around;
-    align-items:center ;
-    text-align: center;
-    margin: 50px;
+.partie h2 {
+  font-size: 25px;
 }
-.three h1{
-    font-size: 50px;
+.partie p {
+  font-size: 20px;
 }
-.three h2{
-    font-size: 30px;
+.partie i {
+  font-size: 50px;
 }
-.three h1 #bleu{
-    color:rgb(28, 118, 160);
+.icon {
+  margin-top: 15px;
 }
-#vert{
-    color: rgb(33, 166, 33);
+.second {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  height: max-content;
+  padding-bottom: 10px;
 }
-#violet{
-    color: rgb(116, 21, 167);
+.second h1 {
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  font-weight: bolder;
+  font-size: 50px;
 }
-#orange{
-    color: rgb(191, 130, 15);
+.second h2 {
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
 }
-footer{
-    background-color: #0a1a22;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.three-partie {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
 }
-.footer-content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* text-align: center; */
+.three h1 {
+  font-size: 50px;
 }
-.footer-section{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 40%;
-    height: max-content;
+.three h2 {
+  font-size: 30px;
 }
-.footer-section p{
-    font-size: 15px;
+.three h1 #bleu {
+  color: rgb(28, 118, 160);
 }
-.footer-section ul{
-    list-style-type: none;
-    padding: 0px;
-    
+#vert {
+  color: rgb(33, 166, 33);
 }
-.footer-section ul li{
-    margin: 10px 0px;
+#violet {
+  color: rgb(116, 21, 167);
 }
-.footer-section ul li a{
-    text-decoration: none;
-    color: white;
+#orange {
+  color: rgb(191, 130, 15);
 }
-.copy{
-    display: block;
+footer {
+  background-color: #0a1a22;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* text-align: center; */
+}
+.footer-section {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: max-content;
+}
+.footer-section p {
+  font-size: 15px;
+}
+.footer-section ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.footer-section ul li {
+  margin: 10px 0px;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+}
+.copy {
+  display: block;
 }
 
 /* Parge de centre medicaux */
 
-
-
-@media (max-width: 768px) {
-    header{
-        padding: 0px;
-        margin: 0px;
-    }
-    nav ul a{
-        font-size: 14px; 
-    }
-    nav ul{
-        gap: 10px;
-        margin-right: 10px;
-    }
-    #logo img{
-        height:50px;
-        width: 100px;
-    }
-    .content h1{
-        font-size: 20px;
-    }
-    .content p{
-        font-size: 18px;
-    }
-    .cover{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .first-partie{
-        flex-direction: column;
-    }
-    .second h1{
-        font-size: 30px;
-    }
-    .three-partie{
-        flex-direction: column;
-    }
-    .footer-content{
-        flex-direction: column;
-    }
-    .footer-section{
-        width: 100%;
-    }
-    .footer-section h1{
-        font-size: 20px;
-    }
+@media (max-width: 1024px) {
+  header {
+    padding: 0px;
+    margin: 0px;
+  }
+   /* .burger-icon {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+    
+  .burger-icon span {
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+  
+  .burger-checkbox:checked ~ .menu-liste {
+    display: block;
 }
-@media (max-width: 540px) {
-    header{
-        flex-direction: column;
-    }
-   
+  nav ul a {
+    font-size: 7px;
+  }
+  .menu-liste {
+    display: none
+  } */
+  #logo img {
+    height: 50px;
+    width: 100px;
+  }
+  .content h1 {
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+  .cover {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .first-partie {
+    flex-direction: column;
+  }
+  .second h1 {
+    font-size: 30px;
+  }
+  .three-partie {
+    flex-direction: column;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-section {
+    width: 100%;
+  }
+  .footer-section h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width:768px) {
+
+    .burger-icon {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+    
+  .burger-icon span {
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+  
+  .burger-checkbox:checked ~ .menu-liste {
+    display: block;
+}
+  nav ul a {
+    font-size: 7px;
+  }
+  .menu-liste {
+    display: none
+  }
+  .copy p{
+    font-size: 12px;
+  }
 }
