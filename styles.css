@@ -24,27 +24,27 @@ header {
   list-style-type: none;
   margin-right: 40px;
 }
- .burger-checkbox {
+.burger-checkbox {
   display: none;
 }
-.burger-icon{
-    display: none;
-   }
- /* .burger-icon {
+.burger-icon {
+  display: none;
+}
+/* .burger-icon {
     display: flex;
     flex-direction: column;
     width: 30px;
     cursor: pointer; 
 
   }*/
-  /* .burger-icon span {
+/* .burger-icon span {
     height: 3px;
     background-color: black;
     margin: 3px 0;
     transition: 0.3s;
   } */
- 
-  /* .menu-liste {
+
+/* .menu-liste {
     display: none;
   } */
 nav ul a {
@@ -206,12 +206,62 @@ footer {
 
 /* Parge de centre medicaux */
 
+form {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.input-contenant {
+  position: relative;
+  width: 40%;
+}
+.text-main {
+  margin-left: 20px;
+}
+.text-main h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.text-main p {
+  font-size: 20px;
+  font-weight: 50;
+}
+.but-main {
+  margin-left: 20px;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+input {
+  padding-left: 30px;
+  height: 30px;
+  width: 100%;
+}
+.but_form {
+  padding: 5px 10px;
+  width: 10%;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #1d729c;
+}
+select {
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+}
+
 @media (max-width: 1024px) {
   header {
     padding: 0px;
     margin: 0px;
   }
-   /* .burger-icon {
+  /* .burger-icon {
     display: flex;
     flex-direction: column;
     width: 30px;
@@ -268,33 +318,101 @@ footer {
     font-size: 20px;
   }
 }
-@media (max-width:768px) {
-
-    .burger-icon {
+@media (max-width: 768px) {
+  .burger-icon {
     display: flex;
     flex-direction: column;
     width: 30px;
     cursor: pointer;
     margin-right: 50px;
   }
-    
+
   .burger-icon span {
     height: 3px;
     background-color: black;
     margin: 3px 0;
     transition: 0.3s;
   }
-  
+
   .burger-checkbox:checked ~ .menu-liste {
     display: block;
-}
+  }
   nav ul a {
     font-size: 7px;
   }
   .menu-liste {
-    display: none
+    display: none;
   }
-  .copy p{
+  #logo img {
+    height: 50px;
+    width: 100px;
+  }
+  .content h1 {
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+  .cover {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .first-partie {
+    flex-direction: column;
+  }
+  .second h1 {
+    font-size: 30px;
+  }
+  .three-partie {
+    flex-direction: column;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-section {
+    width: 100%;
+  }
+  .footer-section h1 {
+    font-size: 20px;
+  }
+  .copy p {
     font-size: 12px;
+  }
+  .text-main h1 {
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .text-main p {
+    font-size: 15px;
+    font-weight: 50;
+  }
+  .but_form {
+    width: 25%;
+    height: 30px;
+  }
+  select {
+    width: 15%;
+    height: 30px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  select {
+    width: 100%;
+  }
+  .but_form {
+    width: 100%;
+  }
+  .input-contenant{
+    width: 100%;
+  }
+  .but-main{
+    width: 100%;
+    margin-left: 0px;
   }
 }
