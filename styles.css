@@ -256,6 +256,15 @@ select {
   border-radius: 5px;
 }
 
+.special P{
+  border: 1px rgba(0, 0, 0, 0) solid;
+  border-radius: 10px;
+  max-width: max-content;
+  padding: 2px;
+  background-color:rgb(242, 239, 239);
+
+}
+
 @media (max-width: 1024px) {
   header {
     padding: 0px;
