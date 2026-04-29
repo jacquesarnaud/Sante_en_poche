@@ -1,161 +1,128 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Contactez-Nous</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Sate en poche</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a id="logo" href=""><img src="/image/logo.jpeg" alt="" /></a>
+      <nav>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu-liste">
+          <li><a href="/index.html">Acceuil</a></li>
+          <li><a href="/lien_html/centre_medical.html">Centres Médicaux</a></li>
+          <li><a href="/lien_html/pharmacie.html">Parmacie de garde</a></li>
+          <li><a href="/lien_html/AI.html">IA Médecin</a></li>
+          <li><a href="/lien_html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact">
+        <h1>Contactez-Nous</h1>
+        <p class="subtitle">
+          Vous avez une question ou une suggestion ? N'hésitez pas à nous contacter.
+          Notre équipe vous répondra dans les plus brefs délais.
+        </p>
 
-<section class="contact">
-  <h1>Contactez-Nous</h1>
-  <p class="subtitle">
-    Vous avez une question ou une suggestion ? N'hésitez pas à nous contacter.
-    Notre équipe vous répondra dans les plus brefs délais.
-  </p>
+        <div class="contact-container">
 
-  <div class="container">
+          <!-- Colonne gauche -->
+          <div class="info">
 
-    <!-- Colonne gauche -->
-    <div class="info">
+            <div class="card">
+              <h2>📞 Téléphone</h2>
+              <p>Du lundi au vendredi</p>
+              <strong>0700000000</strong>
+            </div>
 
-      <div class="card">
-        <h2>📞 Téléphone</h2>
-        <p>Du lundi au vendredi</p>
-        <strong>0700000000</strong>
-      </div>
+            <div class="card">
+              <h2>✉️ Email</h2>
+              <p>Réponse sous 24h</p>
+              <strong>contact@santeenpoche.fr</strong>
+            </div>
 
-      <div class="card">
-        <h2>✉️ Email</h2>
-        <p>Réponse sous 24h</p>
-        <strong>contact@santeenpoche.fr</strong>
-      </div>
+            <div class="card">
+              <h2>📍 Adresse</h2>
+              <p>Avenue moussa Diallo</p>
+              <p>koumassi,147</p>
+              <p>côte d’ivoire</p>
+            </div>
 
-      <div class="card">
-        <h2>📍 Adresse</h2>
-        <p>Avenue moussa Diallo</p>
-        <p>koumassi,147</p>
-        <p>côte d’ivoire</p>
-      </div>
+          </div>
 
-    </div>
+          <!-- Formulaire -->
+          <div class="form-box">
+            <form class="form-contact">
+              <div class="row">
+                <input class="inpute" type="text" placeholder="votre nom" required>
+                <input type="email" placeholder="exemple@vu.com" required>
+              </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+              <div class="row">
+                <input type="tel" placeholder="+225 0700000000" required>
+                <input type="text" placeholder="objet de votre message" required>
+              </div>
 
-    <!-- Formulaire -->
-    <div class="form-box">
-      <form>
-        <div class="row">
-          <input type="text" placeholder="votre nom" required>
-          <input type="email" placeholder="exemple@vu.com" required>
+              <textarea placeholder="objet de votre message" required></textarea>
+
+              <button class="bout" contenteditable="" type="submit">envoyer mon message ➤</button>
+            </form>
+          </div>
+
         </div>
 
-        <div class="row">
-          <input type="tel" placeholder="+225 0700000000" required>
-          <input type="text" placeholder="objet de votre message" required>
+        <!-- Horaires -->
+        <div class="hours">
+          <h3>Horaires d'Ouverture</h3>
+          <p><strong>Lundi – Vendredi:</strong> 9h00 – 18h00</p>
+          <p><strong>Samedi:</strong> 9h00 – 13h00</p>
+          <p><strong>Dimanche:</strong> Fermé</p>
         </div>
 
-        <textarea placeholder="objet de votre message" required></textarea>
-
-        <button type="submit">envoyer mon message ➤</button>
-      </form>
-    </div>
-
-  </div>
-
-  <!-- Horaires -->
-  <div class="hours">
-    <h3>Horaires d'Ouverture</h3>
-    <p><strong>Lundi – Vendredi:</strong> 9h00 – 18h00</p>
-    <p><strong>Samedi:</strong> 9h00 – 13h00</p>
-    <p><strong>Dimanche:</strong> Fermé</p>
-  </div>
-
-</section>
-
-</body>
-</html>*
-
-
-
-
-<!-- body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  margin: 0;
-}
-
-.contact {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.subtitle {
-  max-width: 700px;
-  margin: 10px auto 40px;
-  color: #555;
-}
-
-.container {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Colonne gauche */
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  width: 250px;
-  text-align: left;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.card h2 {
-  margin-bottom: 10px;
-}
-
-/* Formulaire */
-.form-box {
-  background: #fff;
-  padding: 25px;
-  border-radius: 15px;
-  width: 500px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.row {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 10px;
-  border: none;
-  background: #eee;
-  font-size: 14px;
-}
-
-textarea {
-  height: 120px;
-  resize: none;
-  margin-bottom: 15px;
-}
-
-button {
-  background: #4a90e2;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  float: right -->
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span>Sante</span> en poche</h1>
+          <p>
+            Notre application innovante vous offre un accès facile à des
+            services médicaux de qualité, où que vous soyez. Que vous ayez
+            besoin de trouver un centre médical, une pharmacie de garde ou même
+            consulter un médecin virtuel, Sate en poche est là pour vous
+            accompagner à chaque étape de votre parcours de santé.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Liens rapides</h2>
+          <ul>
+            <li><a href="">Acceuil</a></li>
+            <li><a href="">Centres Médicaux</a></li>
+            <li><a href="">Parmacie de garde</a></li>
+            <li><a href="">IA Médecin</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contactez-nous</h2>
+          <p><i class="fas fa-phone"></i> +123 456 7890</p>
+          <p><i class="fas fa-envelope"></i></p>
+        </div>
+        copyright &copy; 2024 Sate en poche. Tous droits réservés.
+      </div>
+    </footer>
+  </body>
+</html>
