@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Sate en poche</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a id="logo" href=""><img src="/image/logo.jpeg" alt="" /></a>
+      <nav>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu-liste">
+          <li><a href="/index.html">Acceuil</a></li>
+          <li><a href="/lien_html/centre_medical.html">Centres Médicaux</a></li>
+          <li><a href="/lien_html/pharmacie.html">Parmacie de garde</a></li>
+          <li><a href="/lien_html/AI.html">IA Médecin</a></li>
+          <li><a href="/lien_html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="text-main">
+        <h1>Centres Médicaux et Cliniques</h1>
+        <p>Trouvez le centre médical ou la clinique la plus proche de vous</p>
+      </div>
+      <button class="but-main">
+        <a href=""
+          ><i class="fa-regular fa-paper-plane"></i> Utiliser ma position</a
+        >
+      </button>
+      <form action="/recherche" method="get" class="search-container">
+        <div class="input-contenant">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            name="q"
+            placeholder=" recherche par nom ou service ......"
+            aria-label="Rechercher sur le site"
+          />
+        </div>
+        <select name="sort" aria-label="Trier par">
+          <option value="alpha">tous types</option>
+          <option value="date">CHU</option>
+          <option value="alpha">Centre Medicale</option>
+          <option value="date">Cliniques</option>
+          <option value="alpha">hospital</option>
+        </select>
+        <select name="sort" aria-label="Trier par">
+          <option value="alpha">toutes les villes</option>
+          <option value="date">Abidjan</option>
+          <option value="alpha">Yamoussoukro</option>
+          <option value="date">Gagnoa</option>
+          <option value="alpha">Soubre</option>
+          <option value="date">Bouake</option>
+          <option value="alpha">Zuenoula</option>
+          <option value="date">Odienne</option>
+        </select>
+        <button class="but_form" type="submit">Recherche</button>
+      </form>
+      <section>
+        <div class="dive">
+          <div
+            class="dive-texte"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text">
+              <h2>Clinique Alpha</h2>
+              <p class="spec">Clinique</p>
+            </div>
+            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
+          </div>
+
+          <div
+            class="texte-icon-but"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="texte-icon">
+              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
+              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
+              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            </div>
+            <button class="btn-rdv">
+              <i class="fa-regular fa-paper-plane"></i> itineraire
+            </button>
+          </div>
+
+          <div class="special" style="display: flex; gap: 10px">
+            <p>Généraliste</p>
+            <p>Chirurgien</p>
+            <p>Dermatologue</p>
+          </div>
+        </div>
+        <div class="dive">
+          <div
+            class="dive-texte"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text">
+              <h2>Clinique Alpha</h2>
+              <p class="spec">Clinique</p>
+            </div>
+            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
+          </div>
+
+          <div
+            class="texte-icon-but"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="texte-icon">
+              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
+              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
+              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            </div>
+            <button class="btn-rdv">
+              <i class="fa-regular fa-paper-plane"></i> itineraire
+            </button>
+          </div>
+
+          <div class="special" style="display: flex; gap: 10px">
+            <p>Généraliste</p>
+            <p>Chirurgien</p>
+            <p>Dermatologue</p>
+          </div>
+        </div>
+        <div class="dive">
+          <div
+            class="dive-texte"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text">
+              <h2>Clinique Alpha</h2>
+              <p class="spec">Clinique</p>
+            </div>
+            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
+          </div>
+
+          <div
+            class="texte-icon-but"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="texte-icon">
+              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
+              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
+              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            </div>
+            <button class="btn-rdv">
+              <i class="fa-regular fa-paper-plane"></i> itineraire
+            </button>
+          </div>
+
+          <div class="special" style="display: flex; gap: 10px">
+            <p>Généraliste</p>
+            <p>Chirurgien</p>
+            <p>Dermatologue</p>
+          </div>
+        </div>
+        <div class="dive">
+          <div
+            class="dive-texte"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text">
+              <h2>Clinique Alpha</h2>
+              <p class="spec">Clinique</p>
+            </div>
+            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
+          </div>
+
+          <div
+            class="texte-icon-but"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="texte-icon">
+              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
+              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
+              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            </div>
+            <button class="btn-rdv">
+              <i class="fa-regular fa-paper-plane"></i> itineraire
+            </button>
+          </div>
+
+          <div class="special" style="display: flex; gap: 10px">
+            <p>Généraliste</p>
+            <p>Chirurgien</p>
+            <p>Dermatologue</p>
+          </div>
+        </div>
+        <div class="dive">
+          <div
+            class="dive-texte"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text">
+              <h2>Clinique Alpha</h2>
+              <p class="spec">Clinique</p>
+            </div>
+            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
+          </div>
+
+          <div
+            class="texte-icon-but"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="texte-icon">
+              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
+              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
+              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            </div>
+            <button class="btn-rdv">
+              <i class="fa-regular fa-paper-plane"></i> itineraire
+            </button>
+          </div>
+
+          <div class="special" style="display: flex; gap: 10px">
+            <p>Généraliste</p>
+            <p>Chirurgien</p>
+            <p>Dermatologue</p>
+          </div>
+        </div>
+        <div class="dive">
+          <div
+            class="dive-texte"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text">
+              <h2>Clinique Alpha</h2>
+              <p class="spec">Clinique</p>
+            </div>
+            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
+          </div>
+
+          <div
+            class="texte-icon-but"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="texte-icon">
+              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
+              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
+              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            </div>
+            <button class="btn-rdv">
+              <i class="fa-regular fa-paper-plane"></i> itineraire
+            </button>
+          </div>
+
+          <div class="special" style="display: flex; gap: 10px">
+            <p>Généraliste</p>
+            <p>Chirurgien</p>
+            <p>Dermatologue</p>
+          </div>
+        </div>
+       
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span>Sante</span> en poche</h1>
+          <p>
+            Notre application innovante vous offre un accès facile à des
+            services médicaux de qualité, où que vous soyez. Que vous ayez
+            besoin de trouver un centre médical, une pharmacie de garde ou même
+            consulter un médecin virtuel, Sate en poche est là pour vous
+            accompagner à chaque étape de votre parcours de santé.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Liens rapides</h2>
+          <ul>
+            <li><a href="">Acceuil</a></li>
+            <li><a href="">Centres Médicaux</a></li>
+            <li><a href="">Parmacie de garde</a></li>
+            <li><a href="">IA Médecin</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contactez-nous</h2>
+          <p><i class="fas fa-phone"></i> +123 456 7890</p>
+          <p><i class="fas fa-envelope"></i></p>
+        </div>
+        copyright &copy; 2024 Sate en poche. Tous droits réservés.
+      </div>
+    </footer>
+  </body>
+</html>
