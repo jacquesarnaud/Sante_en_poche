@@ -301,6 +301,25 @@ select {
   margin-left: 70px;
 }
 
+/* Parge de pharmacie */
+.week-filter {
+  display: flex;
+  margin-top: 15px;
+  gap: 2px;
+}
+
+.week-filter button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.week-filter button.active {
+  background: #8d8b8b;
+}
+
 /* ai*/
 .container {
   max-width: 900px;
