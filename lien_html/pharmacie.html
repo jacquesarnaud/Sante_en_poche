@@ -30,263 +30,136 @@
       </nav>
     </header>
     <main>
-      <div class="text-main">
-        <h1>Centres Médicaux et Cliniques</h1>
-        <p>Trouvez le centre médical ou la clinique la plus proche de vous</p>
-      </div>
-      <button class="but-main">
-        <a href=""
-          ><i class="fa-regular fa-paper-plane"></i> Utiliser ma position</a
-        >
-      </button>
-      <form action="/recherche" method="get" class="search-container">
-        <div class="input-contenant">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input
-            type="search"
-            name="q"
-            placeholder=" recherche par nom ou service ......"
-            aria-label="Rechercher sur le site"
-          />
+        <div class="text-main">
+            <h1>Pharmacies de garde</h1>
+            <p>Trouvez la pharmacie de garde la plus proche de vous</p>
         </div>
-        <select name="sort" aria-label="Trier par">
-          <option value="alpha">tous types</option>
-          <option value="date">CHU</option>
-          <option value="alpha">Centre Medicale</option>
-          <option value="date">Cliniques</option>
-          <option value="alpha">hospital</option>
-        </select>
-        <select name="sort" aria-label="Trier par">
-          <option value="alpha">toutes les villes</option>
-          <option value="date">Abidjan</option>
-          <option value="alpha">Yamoussoukro</option>
-          <option value="date">Gagnoa</option>
-          <option value="alpha">Soubre</option>
-          <option value="date">Bouake</option>
-          <option value="alpha">Zuenoula</option>
-          <option value="date">Odienne</option>
-        </select>
-        <button class="but_form" type="submit">Recherche</button>
-      </form>
-      <section>
-        <div class="dive">
-          <div
-            class="dive-texte"
-            style="display: flex; justify-content: space-between"
-          >
-            <div class="text">
-              <h2>Clinique Alpha</h2>
-              <p class="spec">Clinique</p>
-            </div>
-            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
-          </div>
 
-          <div
-            class="texte-icon-but"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <div class="texte-icon">
-              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
-              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
-              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
-            </div>
-            <button class="btn-rdv">
-              <i class="fa-regular fa-paper-plane"></i> itineraire
-            </button>
-          </div>
+        <button class="but-main">
+            <a href="#"><i class="fa-regular fa-paper-plane"></i> Utiliser ma position</a>
+        </button>
 
-          <div class="special" style="display: flex; gap: 10px">
-            <p>Généraliste</p>
-            <p>Chirurgien</p>
-            <p>Dermatologue</p>
-          </div>
-        </div>
-        <div class="dive">
-          <div
-            class="dive-texte"
-            style="display: flex; justify-content: space-between"
-          >
-            <div class="text">
-              <h2>Clinique Alpha</h2>
-              <p class="spec">Clinique</p>
+        <form action="/recherche" method="get" class="search-container">
+            <div class="input-contenant">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+                type="search"
+                name="q"
+                placeholder="Rechercher une pharmacie..."
+            />
             </div>
-            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
-          </div>
 
-          <div
-            class="texte-icon-but"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <div class="texte-icon">
-              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
-              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
-              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            <select name="type">
+            <option>Toutes</option>
+            <option>Pharmacie de garde</option>
+            <option>Pharmacie 24h/24</option>
+            </select>
+
+            <select name="ville">
+            <option>Toutes les villes</option>
+            <option>Abidjan</option>
+            <option>Bouaké</option>
+            <option>Yamoussoukro</option>
+            <option>Daloa</option>
+            </select>
+
+            <button class="but_form" type="submit">Recherche</button>
+        </form>
+
+        <!-- SECTION PHARMACIES -->
+        <section>
+
+            <div class="dive">
+            <div class="dive-texte" style="display: flex; justify-content: space-between">
+                <div class="text">
+                <h2>Pharmacie de la Paix</h2>
+                <p class="spec">Pharmacie de garde</p>
+                </div>
+                <h2 class="pm">
+                <span style="color: green;">0,5 KM</span><br>
+                <span style="font-size: 15px;">ouverte maintenant</span>
+                </h2>
             </div>
-            <button class="btn-rdv">
-              <i class="fa-regular fa-paper-plane"></i> itineraire
-            </button>
-          </div>
 
-          <div class="special" style="display: flex; gap: 10px">
-            <p>Généraliste</p>
-            <p>Chirurgien</p>
-            <p>Dermatologue</p>
-          </div>
-        </div>
-        <div class="dive">
-          <div
-            class="dive-texte"
-            style="display: flex; justify-content: space-between"
-          >
-            <div class="text">
-              <h2>Clinique Alpha</h2>
-              <p class="spec">Clinique</p>
+            <div class="texte-icon-but" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="texte-icon">
+                <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
+                <h3><i class="fa-solid fa-phone"></i> +225 07 11 22 33 44</h3>
+                <h3><i class="fa-regular fa-clock"></i> 24h/24</h3>
+                </div>
+                <button class="btn-rdv">
+                <i class="fa-regular fa-paper-plane"></i> itineraire
+                </button>
             </div>
-            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
-          </div>
 
-          <div
-            class="texte-icon-but"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <div class="texte-icon">
-              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
-              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
-              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            <div class="special" style="display: flex; gap: 10px">
+                <p>Médicaments</p>
+                <p>Urgence</p>
+                <p>Conseil</p>
             </div>
-            <button class="btn-rdv">
-              <i class="fa-regular fa-paper-plane"></i> itineraire
-            </button>
-          </div>
-
-          <div class="special" style="display: flex; gap: 10px">
-            <p>Généraliste</p>
-            <p>Chirurgien</p>
-            <p>Dermatologue</p>
-          </div>
-        </div>
-        <div class="dive">
-          <div
-            class="dive-texte"
-            style="display: flex; justify-content: space-between"
-          >
-            <div class="text">
-              <h2>Clinique Alpha</h2>
-              <p class="spec">Clinique</p>
             </div>
-            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
-          </div>
 
-          <div
-            class="texte-icon-but"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <div class="texte-icon">
-              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
-              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
-              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            <div class="dive">
+            <div class="dive-texte" style="display: flex; justify-content: space-between">
+                <div class="text">
+                <h2>Pharmacie Saint Jean</h2>
+                <p class="spec">Pharmacie de garde</p>
+                </div>
+                <h2 class="pm">
+                <span style="color: green;">1 KM</span><br>
+                <span style="font-size: 15px;">ouverte maintenant</span>
+                </h2>
             </div>
-            <button class="btn-rdv">
-              <i class="fa-regular fa-paper-plane"></i> itineraire
-            </button>
-          </div>
 
-          <div class="special" style="display: flex; gap: 10px">
-            <p>Généraliste</p>
-            <p>Chirurgien</p>
-            <p>Dermatologue</p>
-          </div>
-        </div>
-        <div class="dive">
-          <div
-            class="dive-texte"
-            style="display: flex; justify-content: space-between"
-          >
-            <div class="text">
-              <h2>Clinique Alpha</h2>
-              <p class="spec">Clinique</p>
+            <div class="texte-icon-but" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="texte-icon">
+                <h3><i class="fa-solid fa-location-dot"></i> Yopougon, Abidjan</h3>
+                <h3><i class="fa-solid fa-phone"></i> +225 05 55 66 77 88</h3>
+                <h3><i class="fa-regular fa-clock"></i> 24h/24</h3>
+                </div>
+                <button class="btn-rdv">
+                <i class="fa-regular fa-paper-plane"></i> itineraire
+                </button>
             </div>
-            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
-          </div>
 
-          <div
-            class="texte-icon-but"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <div class="texte-icon">
-              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
-              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
-              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            <div class="special" style="display: flex; gap: 10px">
+                <p>Médicaments</p>
+                <p>Produits santé</p>
+                <p>Conseil</p>
             </div>
-            <button class="btn-rdv">
-              <i class="fa-regular fa-paper-plane"></i> itineraire
-            </button>
-          </div>
-
-          <div class="special" style="display: flex; gap: 10px">
-            <p>Généraliste</p>
-            <p>Chirurgien</p>
-            <p>Dermatologue</p>
-          </div>
-        </div>
-        <div class="dive">
-          <div
-            class="dive-texte"
-            style="display: flex; justify-content: space-between"
-          >
-            <div class="text">
-              <h2>Clinique Alpha</h2>
-              <p class="spec">Clinique</p>
             </div>
-            <h2 class="pm"><span style="color: green;">0,7 KM</span> <br> <span style="font-size: 15px;">de chez vous</span></h2>
-          </div>
 
-          <div
-            class="texte-icon-but"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <div class="texte-icon">
-              <h3><i class="fa-solid fa-location-dot"></i> Cocody, Abidjan</h3>
-              <h3><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</h3>
-              <h3><i class="fa-regular fa-clock"></i> 08h - 18h</h3>
+            <div class="dive">
+            <div class="dive-texte" style="display: flex; justify-content: space-between">
+                <div class="text">
+                <h2>Pharmacie Sainte Marie</h2>
+                <p class="spec">Pharmacie de garde (nuit)</p>
+                </div>
+                <h2 class="pm">
+                <span style="color: green;">2,3 KM</span><br>
+                <span style="font-size: 15px;">garde en cours</span>
+                </h2>
             </div>
-            <button class="btn-rdv">
-              <i class="fa-regular fa-paper-plane"></i> itineraire
-            </button>
-          </div>
 
-          <div class="special" style="display: flex; gap: 10px">
-            <p>Généraliste</p>
-            <p>Chirurgien</p>
-            <p>Dermatologue</p>
-          </div>
-        </div>
-       
-      </section>
+            <div class="texte-icon-but" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="texte-icon">
+                <h3><i class="fa-solid fa-location-dot"></i> Treichville, Abidjan</h3>
+                <h3><i class="fa-solid fa-phone"></i> +225 01 22 33 44 55</h3>
+                <h3><i class="fa-regular fa-clock"></i> 20h - 08h</h3>
+                </div>
+                <button class="btn-rdv">
+                <i class="fa-regular fa-paper-plane"></i> itineraire
+                </button>
+            </div>
+
+            <div class="special" style="display: flex; gap: 10px">
+                <p>Urgence</p>
+                <p>Médicaments</p>
+                <p>Garde nuit</p>
+            </div>
+            </div>
+
+        </section>
     </main>
     <footer>
       <div class="footer-content">
@@ -315,8 +188,10 @@
           <p><i class="fas fa-phone"></i> +123 456 7890</p>
           <p><i class="fas fa-envelope"></i></p>
         </div>
-        copyright &copy; 2024 Sate en poche. Tous droits réservés.
       </div>
+        <div class="copy">
+            &copy; 2026 Sante en poche. Tous droits réservés.
+        </div>
     </footer>
   </body>
 </html>
