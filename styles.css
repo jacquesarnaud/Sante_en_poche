@@ -286,6 +286,9 @@ select {
   width: 100px;
   height:max-content;
 }
+.btn-rdv{
+  margin: 20px;
+}
 .texte-icon h3{
   margin-top:10px;
   margin-bottom: 10px;
